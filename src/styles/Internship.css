@@ -1,0 +1,133 @@
+/* =========================
+   INTERNSHIP SECTION
+========================= */
+
+.internship-section {
+  padding: 80px 20px;
+}
+
+.internship-title {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 50px;
+  color: #9c6b3d;
+}
+
+/* Container */
+.internship-container {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Card */
+.internship-card {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.08);
+  transition: 0.4s ease;
+}
+
+.internship-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Text Styling */
+.internship-card h2 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.internship-card h3 {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.duration {
+  font-size: 14px;
+  color: #9c6b3d;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.internship-card ul {
+  padding-left: 20px;
+}
+
+.internship-card li {
+  margin-bottom: 10px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* =========================
+   COURSE SECTION
+========================= */
+
+.course-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.course-card {
+  background: #ffffff;
+  padding: 40px;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: 0.4s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-6px);
+}
+
+.course-card h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.course-card p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* Certificate Button */
+.certificate-btn {
+  background: #9c6b3d;
+  color: #fff;
+  padding: 12px 26px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.certificate-btn:hover {
+  background: #3b2f2f;
+  transform: translateY(-3px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .internship-title {
+    font-size: 28px;
+  }
+
+  .internship-card {
+    padding: 25px;
+  }
+
+  .course-card {
+    padding: 25px;
+  }
+}

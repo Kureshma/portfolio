@@ -1,0 +1,145 @@
+/* =========================
+   PROJECTS SECTION
+========================= */
+
+.projects-section {
+  padding: 80px 20px;
+}
+
+.projects-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 60px;
+  color: #9c6b3d;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.project-card {
+  display: flex;
+  gap: 40px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Image */
+.project-image img {
+  width: 280px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: 0.3s ease;
+}
+
+.project-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Content */
+.project-content {
+  flex: 1;
+}
+
+.project-content h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.project-content p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.tech {
+  margin-bottom: 20px;
+  color: #9c6b3d;
+}
+
+/* Button */
+.demo-btn {
+  background: #9c6b3d;
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.demo-btn:hover {
+  background: #3b2f2f;
+  transform: translateY(-3px);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+  .project-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects-title {
+    font-size: 28px;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+}
+
+/* Buttons container */
+.project-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+/* View Code Button - Brown Theme */
+.code-btn {
+  background: transparent;
+  border: 2px solid #8B5E3C;   /* Elegant brown */
+  color: #8B5E3C;
+  padding: 8px 15px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.code-btn:hover {
+  background: #8B5E3C;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(139, 94, 60, 0.35);
+}

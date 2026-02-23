@@ -1,0 +1,184 @@
+/* =========================
+   HERO SECTION
+========================= */
+
+.home {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* LEFT IMAGE */
+.home-image img {
+  width: 340px;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+
+.home-image img:hover {
+  transform: scale(1.05);
+}
+
+/* RIGHT CONTENT */
+.home-content {
+  max-width: 520px;
+}
+
+.home-content h1 {
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+.home-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #444;
+}
+
+.home-content p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.highlight {
+  color: #9c6b3d;
+}
+
+/* BUTTON */
+.primary-btn {
+  background: #9c6b3d;
+  color: #fff;
+  padding: 14px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.primary-btn:hover {
+  background: #3b2f2f;
+  transform: translateY(-3px);
+}
+
+/* =========================
+   INTRO CARD SECTION
+========================= */
+
+.intro-section {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Card Style */
+.intro-card {
+  background: #ffffff;
+  padding: 50px;
+  max-width: 900px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.4s ease;
+}
+
+.intro-card:hover {
+  transform: translateY(-5px);
+}
+
+.intro-card h2 {
+  font-size: 32px;
+  color: #9c6b3d;
+  margin-bottom: 20px;
+}
+
+.intro-card p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* SECONDARY BUTTON */
+.secondary-btn {
+  border: 2px solid #9c6b3d;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #9c6b3d;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: #9c6b3d;
+  color: #fff;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 992px) {
+  .home-container {
+    gap: 50px;
+  }
+
+  .home-image img {
+    width: 260px;
+  }
+
+  .home-content h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-image img {
+    width: 220px;
+  }
+
+  .home-content h1 {
+    font-size: 28px;
+  }
+
+  .home-content h2 {
+    font-size: 22px;
+  }
+
+  .intro-card {
+    padding: 35px 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content h1 {
+    font-size: 24px;
+  }
+
+  .home-content p {
+    font-size: 14px;
+  }
+
+  .home-image img {
+    width: 180px;
+  }
+}

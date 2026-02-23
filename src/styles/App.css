@@ -1,0 +1,325 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f6efe9, #f4d9c6);
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Reusable container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* CONTACT PAGE */
+.contact-page {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contact-subtitle {
+  max-width: 600px;
+  margin: 0 auto 40px;
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Layout */
+.contact-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Card Styling */
+.card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Contact Info */
+.contact-info h2,
+.contact-form h2 {
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.info-item {
+  margin-bottom: 20px;
+}
+
+.info-item h4 {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.info-item a {
+  text-decoration: none;
+  color: #6c63ff;
+  font-weight: 500;
+}
+
+.social-links a {
+  margin-right: 15px;
+  color: #6c63ff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Form Styling */
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #6c63ff;
+  box-shadow: 0 0 5px rgba(108, 99, 255, 0.3);
+}
+
+/* Buttons */
+.primary-btn {
+  background: linear-gradient(135deg, #6c63ff, #8f85ff);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(108, 99, 255, 0.4);
+}
+
+/* CTA Section */
+.contact-cta {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.contact-cta p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+/* Success Popup */
+.success-popup {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #4CAF50, #66bb6a);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  font-weight: 500;
+  animation: slideIn 0.4s ease forwards;
+  z-index: 1000;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Contact Image */
+.contact-image-wrapper {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact-image-wrapper img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.contact-image-wrapper img:hover {
+  transform: scale(1.03);
+}
+
+/* ============================= */
+/* HIRE PAGE */
+/* ============================= */
+
+.hire-page {
+  padding: 80px 8%;
+}
+
+/* Hero Layout */
+.hire-hero {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Image */
+.hire-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hire-image img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  height: 350px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Content */
+.hire-content {
+  flex: 1;
+  min-width: 300px;
+}
+
+.hire-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hire-description {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Buttons */
+.hire-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 2px solid #6c63ff;
+  color: #6c63ff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.secondary-btn:hover {
+  background: #6c63ff;
+  color: #fff;
+}
+
+/* Skills Section */
+.hire-skills {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.hire-skills h2 {
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.skill-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Final CTA */
+.hire-cta {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.hire-cta p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hire-hero {
+    flex-direction: column;
+    text-align: center;
+  }
+}

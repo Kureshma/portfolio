@@ -1,0 +1,43 @@
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background: transparent;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 60px;
+  border-top: 1px solid rgba(156, 107, 61, 0.2);
+}
+
+.footer p {
+  font-size: 14px;
+  color: #6b5b4d;
+  letter-spacing: 0.5px;
+  transition: 0.3s ease;
+}
+
+/* Optional subtle hover glow */
+.footer p:hover {
+  color: #9c6b3d;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .footer p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer p {
+    font-size: 12px;
+  }
+}
