@@ -6,6 +6,7 @@ import project2 from "../assets/project2.png";
 import project3 from "../assets/project3.png";
 import project4 from "../assets/project4.png";
 import project5 from "../assets/project5.png";
+import project6 from "../assets/project6.jpeg";
 
 function Projects() {
   const projects = [
@@ -38,6 +39,17 @@ function Projects() {
       github: "https://github.com/Kureshma/calculator-react-app"
     },
 
+
+    {
+      title: " Trivita – Life-Saving Donation Platform",
+      image: project6,
+      description:
+        "Trivita is a web-based donation platform that connects donors and recipients for organ, blood, and milk donation through a simple and user-friendly interface.",
+      tech: "HTML, CSS, JavaScript",
+      link: "https://trivita-04.netlify.app/",
+      github: "https://github.com/Kureshma/TRIVITA.git"
+    },
+
      {
       title: "FunZone – Kids Shopping Website",
       image: project1,
@@ -53,7 +65,7 @@ function Projects() {
       image: project5,
       description:
         "Built role-based authentication using React.js and localStorage with separate dashboards for Admin and User.",
-      tech: "React.js, LocalStorage",
+      tech: "html,css,js, LocalStorage",
       link: "https://moonpetal-auth.netlify.app/",
       github: "https://github.com/Kureshma/role-based-auth"
     }
