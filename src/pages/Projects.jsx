@@ -5,7 +5,7 @@ import project1 from "../assets/project1.png";
 import project2 from "../assets/project2.png";
 import project3 from "../assets/project3.png";
 import project4 from "../assets/project4.png";
-import project5 from "../assets/project5.png";
+import project5 from "../assets/project5.jpg";
 import project6 from "../assets/project6.jpeg";
 
 function Projects() {
@@ -20,6 +20,17 @@ function Projects() {
       link: "https://weather-app-w1012.netlify.app/",
       github: "https://github.com/Kureshma/weather-app"
     },
+
+    {
+      title: "Finvora – Personal Finance Tracker",
+      image: project5,
+      description:
+        "A React.js-based personal finance tracker that helps users manage expenses, monitor budgets, and visualize spending through interactive dashboards.",
+      tech: "React js,Tailwind CSS",
+      link: "https://finvora-tawny.vercel.app/",
+      github: "https://github.com/Kureshma/Finvora.git"
+    },
+    
     {
       title: "JoyBit App",
       image: project4,
@@ -58,17 +69,8 @@ function Projects() {
       tech: "HTML, CSS, JavaScript",
       link: "https://funzone-kids.netlify.app/",
       github: "https://github.com/Kureshma/funzone"
-    },
-    
-    {
-      title: "MoonPetal – Role-Based Authentication App",
-      image: project5,
-      description:
-        "Built role-based authentication using React.js and localStorage with separate dashboards for Admin and User.",
-      tech: "html,css,js, LocalStorage",
-      link: "https://moonpetal-auth.netlify.app/",
-      github: "https://github.com/Kureshma/role-based-auth"
     }
+    
   ];
 
   return (
