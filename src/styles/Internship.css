@@ -131,3 +131,8 @@
     padding: 25px;
   }
 }
+
+.internship-card .certificate-btn {
+  display: inline-block;
+  margin-top: 15px;
+}
