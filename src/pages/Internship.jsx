@@ -76,7 +76,7 @@ function Internship() {
               ))}
             </ul>
 
-            {/* ✅ Added Certificate Button */}
+            {/*  Added Certificate Button */}
             <a 
               href={item.certificate}
               target="_blank"
